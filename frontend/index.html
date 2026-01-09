@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question Answering System</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Question Answering System</h1>
+    <p class="subtitle">Ask questions from your given context</p>
+
+    <label>Context</label>
+    <textarea id="context" placeholder="Enter context here..."></textarea>
+
+    <label>Question</label>
+    <input id="question" type="text" placeholder="Enter your question">
+
+    <button onclick="askQuestion()">Get Answer</button>
+
+    <div class="output">
+        <p><strong>Answer:</strong></p>
+        <p id="answer">---</p>
+
+        <p><strong>Confidence:</strong></p>
+        <p id="confidence">---</p>
+    </div>
+</div>
+
+<!-- JS -->
+<script src="/static/script.js"></script>
+</body>
+</html>
