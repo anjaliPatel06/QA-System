@@ -15,9 +15,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR,"final_model")
+MODEL_PATH = os.path.join(BASE_DIR,"PatelAnjali/qa-roberta-finetuned")
 FRONTEND_PATH = os.path.join(BASE_DIR,"frontend")
 
 QA_pipeline = pipeline(
